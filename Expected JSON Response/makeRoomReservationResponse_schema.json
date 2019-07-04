@@ -1,0 +1,1134 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "xRogType": {
+      "type": "integer"
+    },
+    "header": {
+      "type": "object",
+      "properties": {
+        "sourceId": {
+          "type": "string"
+        },
+        "transactionId": {
+          "type": "string"
+        },
+        "requestId": {
+          "type": "string"
+        },
+        "senderVersion": {
+          "type": "object",
+          "properties": {
+            "majorVersion": {
+              "type": "integer"
+            },
+            "minorVersion": {
+              "type": "integer"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "majorVersion",
+            "minorVersion",
+            "_xFieldBitmask_"
+          ]
+        },
+        "_xFieldBitmask_": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            }
+          ]
+        }
+      },
+      "required": [
+        "sourceId",
+        "transactionId",
+        "requestId",
+        "senderVersion",
+        "_xFieldBitmask_"
+      ]
+    },
+    "itinerary": {
+      "type": "object",
+      "properties": {
+        "customerId": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "integer"
+        },
+        "updatedAt": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "tripParams": {
+          "type": "object",
+          "properties": {
+            "arrivalDate": {
+              "type": "string"
+            },
+            "departureDate": {
+              "type": "string"
+            },
+            "numAdults": {
+              "type": "integer"
+            },
+            "numChildren": {
+              "type": "integer"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "arrivalDate",
+            "departureDate",
+            "numAdults",
+            "numChildren",
+            "_xFieldBitmask_"
+          ]
+        },
+        "roomReservations": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "instance": {
+                  "type": "integer"
+                },
+                "numRooms": {
+                  "type": "integer"
+                },
+                "bookDate": {
+                  "type": "string"
+                },
+                "checkInDate": {
+                  "type": "string"
+                },
+                "checkOutDate": {
+                  "type": "string"
+                },
+                "numAdults": {
+                  "type": "integer"
+                },
+                "numChildren": {
+                  "type": "integer"
+                },
+                "billingType": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "postingFlow": {
+                  "type": "string"
+                },
+                "postingState": {
+                  "type": "string"
+                },
+                "postingStartedAt": {
+                  "type": "integer"
+                },
+                "postingEndedAt": {
+                  "type": "integer"
+                },
+                "amountDue": {
+                  "type": "number"
+                },
+                "createdAt": {
+                  "type": "integer"
+                },
+                "updatedAt": {
+                  "type": "integer"
+                },
+                "syncFromOperaAt": {
+                  "type": "integer"
+                },
+                "pointCharges": {
+                  "type": "integer"
+                },
+                "nrgStatus": {
+                  "type": "boolean"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "itineraryId": {
+                  "type": "string"
+                },
+                "propertyId": {
+                  "type": "string"
+                },
+                "roomTypeId": {
+                  "type": "string"
+                },
+                "guaranteeCode": {
+                  "type": "string"
+                },
+                "comments": {
+                  "type": "string"
+                },
+                "profile": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "mlifeNo": {
+                      "type": "integer"
+                    },
+                    "modifiable": {
+                      "type": "boolean"
+                    },
+                    "createdAt": {
+                      "type": "integer"
+                    },
+                    "updatedAt": {
+                      "type": "integer"
+                    },
+                    "refreshedAt": {
+                      "type": "integer"
+                    },
+                    "stale": {
+                      "type": "boolean"
+                    },
+                    "externalSyncAt": {
+                      "type": "integer"
+                    },
+                    "caslOptin": {
+                      "type": "boolean"
+                    },
+                    "firstName": {
+                      "type": "string"
+                    },
+                    "lastName": {
+                      "type": "string"
+                    },
+                    "emailAddress1": {
+                      "type": "string"
+                    },
+                    "phoneNumbers": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "number": {
+                              "type": "string"
+                            },
+                            "_xFieldBitmask_": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "integer"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "number",
+                            "_xFieldBitmask_"
+                          ]
+                        }
+                      ]
+                    },
+                    "addresses": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "preferred": {
+                              "type": "boolean"
+                            },
+                            "street1": {
+                              "type": "string"
+                            },
+                            "street2": {
+                              "type": "string"
+                            },
+                            "city": {
+                              "type": "string"
+                            },
+                            "state": {
+                              "type": "string"
+                            },
+                            "country": {
+                              "type": "string"
+                            },
+                            "postalCode": {
+                              "type": "string"
+                            },
+                            "_xFieldBitmask_": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "integer"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "preferred",
+                            "street1",
+                            "street2",
+                            "city",
+                            "state",
+                            "country",
+                            "postalCode",
+                            "_xFieldBitmask_"
+                          ]
+                        }
+                      ]
+                    },
+                    "_xFieldBitmask_": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "integer"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "mlifeNo",
+                    "modifiable",
+                    "createdAt",
+                    "updatedAt",
+                    "refreshedAt",
+                    "stale",
+                    "externalSyncAt",
+                    "caslOptin",
+                    "firstName",
+                    "lastName",
+                    "emailAddress1",
+                    "phoneNumbers",
+                    "addresses",
+                    "_xFieldBitmask_"
+                  ]
+                },
+                "bookings": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "date": {
+                          "type": "string"
+                        },
+                        "basePrice": {
+                          "type": "integer"
+                        },
+                        "customerPrice": {
+                          "type": "integer"
+                        },
+                        "price": {
+                          "type": "integer"
+                        },
+                        "programIdIsRateTable": {
+                          "type": "boolean"
+                        },
+                        "overridePrice": {
+                          "type": "integer"
+                        },
+                        "overrideProgramIdIsRateTable": {
+                          "type": "boolean"
+                        },
+                        "isComp": {
+                          "type": "boolean"
+                        },
+                        "resortFeeIsSpecified": {
+                          "type": "boolean"
+                        },
+                        "resortFee": {
+                          "type": "integer"
+                        },
+                        "programId": {
+                          "type": "string"
+                        },
+                        "pricingRuleId": {
+                          "type": "string"
+                        },
+                        "_xFieldBitmask_": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "integer"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "date",
+                        "basePrice",
+                        "customerPrice",
+                        "price",
+                        "programIdIsRateTable",
+                        "overridePrice",
+                        "overrideProgramIdIsRateTable",
+                        "isComp",
+                        "resortFeeIsSpecified",
+                        "resortFee",
+                        "programId",
+                        "pricingRuleId",
+                        "_xFieldBitmask_"
+                      ]
+                    }
+                  ]
+                },
+                "markets": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "date": {
+                          "type": "string"
+                        },
+                        "marketCode": {
+                          "type": "string"
+                        },
+                        "sourceCode": {
+                          "type": "string"
+                        },
+                        "_xFieldBitmask_": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "integer"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "date",
+                        "marketCode",
+                        "sourceCode",
+                        "_xFieldBitmask_"
+                      ]
+                    }
+                  ]
+                },
+                "chargesAndTaxesCalc": {
+                  "type": "object",
+                  "properties": {
+                    "charges": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "date": {
+                              "type": "string"
+                            },
+                            "amount": {
+                              "type": "integer"
+                            },
+                            "pointsUsed": {
+                              "type": "integer"
+                            },
+                            "itemized": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "itemType": {
+                                      "type": "string"
+                                    },
+                                    "amount": {
+                                      "type": "integer"
+                                    },
+                                    "pointsUsed": {
+                                      "type": "integer"
+                                    },
+                                    "item": {
+                                      "type": "string"
+                                    },
+                                    "_xFieldBitmask_": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "integer"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "itemType",
+                                    "amount",
+                                    "pointsUsed",
+                                    "item",
+                                    "_xFieldBitmask_"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "itemType": {
+                                      "type": "string"
+                                    },
+                                    "amount": {
+                                      "type": "integer"
+                                    },
+                                    "pointsUsed": {
+                                      "type": "integer"
+                                    },
+                                    "item": {
+                                      "type": "string"
+                                    },
+                                    "_xFieldBitmask_": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "integer"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "itemType",
+                                    "amount",
+                                    "pointsUsed",
+                                    "item",
+                                    "_xFieldBitmask_"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "itemType": {
+                                      "type": "string"
+                                    },
+                                    "amount": {
+                                      "type": "integer"
+                                    },
+                                    "pointsUsed": {
+                                      "type": "integer"
+                                    },
+                                    "item": {
+                                      "type": "string"
+                                    },
+                                    "_xFieldBitmask_": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "integer"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "itemType",
+                                    "amount",
+                                    "pointsUsed",
+                                    "item",
+                                    "_xFieldBitmask_"
+                                  ]
+                                }
+                              ]
+                            },
+                            "_xFieldBitmask_": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "integer"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "date",
+                            "amount",
+                            "pointsUsed",
+                            "itemized",
+                            "_xFieldBitmask_"
+                          ]
+                        }
+                      ]
+                    },
+                    "taxesAndFees": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "date": {
+                              "type": "string"
+                            },
+                            "amount": {
+                              "type": "number"
+                            },
+                            "pointsUsed": {
+                              "type": "integer"
+                            },
+                            "itemized": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "itemType": {
+                                      "type": "string"
+                                    },
+                                    "amount": {
+                                      "type": "number"
+                                    },
+                                    "pointsUsed": {
+                                      "type": "integer"
+                                    },
+                                    "item": {
+                                      "type": "string"
+                                    },
+                                    "_xFieldBitmask_": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "integer"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "itemType",
+                                    "amount",
+                                    "pointsUsed",
+                                    "item",
+                                    "_xFieldBitmask_"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "itemType": {
+                                      "type": "string"
+                                    },
+                                    "amount": {
+                                      "type": "integer"
+                                    },
+                                    "pointsUsed": {
+                                      "type": "integer"
+                                    },
+                                    "item": {
+                                      "type": "string"
+                                    },
+                                    "_xFieldBitmask_": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "integer"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "itemType",
+                                    "amount",
+                                    "pointsUsed",
+                                    "item",
+                                    "_xFieldBitmask_"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "itemType": {
+                                      "type": "string"
+                                    },
+                                    "amount": {
+                                      "type": "number"
+                                    },
+                                    "pointsUsed": {
+                                      "type": "integer"
+                                    },
+                                    "item": {
+                                      "type": "string"
+                                    },
+                                    "_xFieldBitmask_": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "integer"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "itemType",
+                                    "amount",
+                                    "pointsUsed",
+                                    "item",
+                                    "_xFieldBitmask_"
+                                  ]
+                                }
+                              ]
+                            },
+                            "_xFieldBitmask_": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "integer"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "date",
+                            "amount",
+                            "pointsUsed",
+                            "itemized",
+                            "_xFieldBitmask_"
+                          ]
+                        }
+                      ]
+                    },
+                    "_xFieldBitmask_": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "integer"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "charges",
+                    "taxesAndFees",
+                    "_xFieldBitmask_"
+                  ]
+                },
+                "depositPolicyCalc": {
+                  "type": "object",
+                  "properties": {
+                    "depositRequired": {
+                      "type": "boolean"
+                    },
+                    "creditCardRequired": {
+                      "type": "boolean"
+                    },
+                    "_xFieldBitmask_": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "integer"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "depositRequired",
+                    "creditCardRequired",
+                    "_xFieldBitmask_"
+                  ]
+                },
+                "depositCalc": {
+                  "type": "object",
+                  "properties": {
+                    "dueDate": {
+                      "type": "string"
+                    },
+                    "amountPolicy": {
+                      "type": "string"
+                    },
+                    "amount": {
+                      "type": "number"
+                    },
+                    "forfeitDate": {
+                      "type": "string"
+                    },
+                    "forfeitAmount": {
+                      "type": "number"
+                    },
+                    "overrideAmount": {
+                      "type": "integer"
+                    },
+                    "depositRuleCode": {
+                      "type": "string"
+                    },
+                    "cancellationRuleCode": {
+                      "type": "string"
+                    },
+                    "itemized": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "itemType": {
+                              "type": "string"
+                            },
+                            "amount": {
+                              "type": "integer"
+                            },
+                            "pointsUsed": {
+                              "type": "integer"
+                            },
+                            "item": {
+                              "type": "string"
+                            },
+                            "_xFieldBitmask_": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "integer"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "itemType",
+                            "amount",
+                            "pointsUsed",
+                            "item",
+                            "_xFieldBitmask_"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "itemType": {
+                              "type": "string"
+                            },
+                            "amount": {
+                              "type": "number"
+                            },
+                            "pointsUsed": {
+                              "type": "integer"
+                            },
+                            "item": {
+                              "type": "string"
+                            },
+                            "_xFieldBitmask_": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "integer"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "itemType",
+                            "amount",
+                            "pointsUsed",
+                            "item",
+                            "_xFieldBitmask_"
+                          ]
+                        }
+                      ]
+                    },
+                    "pointAmount": {
+                      "type": "object",
+                      "properties": {
+                        "dollarValue": {
+                          "type": "number"
+                        },
+                        "pointValue": {
+                          "type": "integer"
+                        },
+                        "_xFieldBitmask_": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "integer"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dollarValue",
+                        "pointValue",
+                        "_xFieldBitmask_"
+                      ]
+                    },
+                    "_xFieldBitmask_": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "integer"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "dueDate",
+                    "amountPolicy",
+                    "amount",
+                    "forfeitDate",
+                    "forfeitAmount",
+                    "overrideAmount",
+                    "depositRuleCode",
+                    "cancellationRuleCode",
+                    "itemized",
+                    "pointAmount",
+                    "_xFieldBitmask_"
+                  ]
+                },
+                "creditCardCharges": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "expiry": {
+                          "type": "string"
+                        },
+                        "amount": {
+                          "type": "number"
+                        },
+                        "holder": {
+                          "type": "string"
+                        },
+                        "number": {
+                          "type": "string"
+                        },
+                        "maskedNumber": {
+                          "type": "string"
+                        },
+                        "cvv": {
+                          "type": "string"
+                        },
+                        "type": {
+                          "type": "string"
+                        },
+                        "_xFieldBitmask_": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "integer"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "expiry",
+                        "amount",
+                        "holder",
+                        "number",
+                        "maskedNumber",
+                        "cvv",
+                        "type",
+                        "_xFieldBitmask_"
+                      ]
+                    }
+                  ]
+                },
+                "channelId": {
+                  "type": "string"
+                },
+                "origin": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "confirmationNumber": {
+                  "type": "string"
+                },
+                "payments": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "reservationInstance": {
+                          "type": "integer"
+                        },
+                        "chargeAmount": {
+                          "type": "number"
+                        },
+                        "chargeCardExpiry": {
+                          "type": "string"
+                        },
+                        "dccChecked": {
+                          "type": "boolean"
+                        },
+                        "dccEligible": {
+                          "type": "boolean"
+                        },
+                        "dccTransDate": {
+                          "type": "string"
+                        },
+                        "dccAmount": {
+                          "type": "integer"
+                        },
+                        "dccRate": {
+                          "type": "integer"
+                        },
+                        "dccSettleAmount": {
+                          "type": "number"
+                        },
+                        "status": {
+                          "type": "string"
+                        },
+                        "isDeposit": {
+                          "type": "boolean"
+                        },
+                        "isExternal": {
+                          "type": "boolean"
+                        },
+                        "chargeCardHolder": {
+                          "type": "string"
+                        },
+                        "chargeCurrencyCode": {
+                          "type": "string"
+                        },
+                        "chargeCardType": {
+                          "type": "string"
+                        },
+                        "chargeCardMaskedNumber": {
+                          "type": "string"
+                        },
+                        "chargeCardNumber": {
+                          "type": "string"
+                        },
+                        "dccCurrencyCode": {
+                          "type": "string"
+                        },
+                        "dccAcceptMessage": {
+                          "type": "string"
+                        },
+                        "dccAuthApprovalCode": {
+                          "type": "string"
+                        },
+                        "_xFieldBitmask_": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "integer"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "reservationInstance",
+                        "chargeAmount",
+                        "chargeCardExpiry",
+                        "dccChecked",
+                        "dccEligible",
+                        "dccTransDate",
+                        "dccAmount",
+                        "dccRate",
+                        "dccSettleAmount",
+                        "status",
+                        "isDeposit",
+                        "isExternal",
+                        "chargeCardHolder",
+                        "chargeCurrencyCode",
+                        "chargeCardType",
+                        "chargeCardMaskedNumber",
+                        "chargeCardNumber",
+                        "dccCurrencyCode",
+                        "dccAcceptMessage",
+                        "dccAuthApprovalCode",
+                        "_xFieldBitmask_"
+                      ]
+                    }
+                  ]
+                },
+                "_xFieldBitmask_": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "integer"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "instance",
+                "numRooms",
+                "bookDate",
+                "checkInDate",
+                "checkOutDate",
+                "numAdults",
+                "numChildren",
+                "billingType",
+                "state",
+                "postingFlow",
+                "postingState",
+                "postingStartedAt",
+                "postingEndedAt",
+                "amountDue",
+                "createdAt",
+                "updatedAt",
+                "syncFromOperaAt",
+                "pointCharges",
+                "nrgStatus",
+                "id",
+                "itineraryId",
+                "propertyId",
+                "roomTypeId",
+                "guaranteeCode",
+                "comments",
+                "profile",
+                "bookings",
+                "markets",
+                "chargesAndTaxesCalc",
+                "depositPolicyCalc",
+                "depositCalc",
+                "creditCardCharges",
+                "channelId",
+                "origin",
+                "source",
+                "confirmationNumber",
+                "payments",
+                "_xFieldBitmask_"
+              ]
+            }
+          ]
+        },
+        "_xFieldBitmask_": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            }
+          ]
+        }
+      },
+      "required": [
+        "customerId",
+        "createdAt",
+        "updatedAt",
+        "id",
+        "tripParams",
+        "roomReservations",
+        "_xFieldBitmask_"
+      ]
+    },
+    "_xFieldBitmask_": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        }
+      ]
+    }
+  },
+  "required": [
+    "xRogType",
+    "header",
+    "itinerary",
+    "_xFieldBitmask_"
+  ]
+}

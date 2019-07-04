@@ -1,0 +1,35 @@
+{
+	"xRogType": 0,
+	"enroll": true,
+		"header": {
+			"origin": "mgmgrandlv",
+			"credentials": {
+				"username": "mgmgrandlv",
+				"password": "doesntmatter",
+				"_xFieldBitmask_": [0]
+			},
+			"senderVersion": {
+				"majorVersion": 3,
+				"minorVersion": 0,
+				"_xFieldBitmask_": [0]
+			},
+			"_xFieldBitmask_": [0]
+		},
+	"customer": {
+		"id": 0,
+		"mlifeNo": 0,
+		"modifiable"
+		: false,
+		"createdAt": 0,
+		"updatedAt": 0,
+		"refreshedAt": 0,
+		"stale": false,
+		"externalSyncAt": 0,
+		"expired": false,
+		"firstName": "FirstName",
+		"lastName": "LastName",
+		"dateOfBirth": "1911-01-01",
+		"_xFieldBitmask_": [1572864]
+	},
+	"_xFieldBitmask_": [4]
+}

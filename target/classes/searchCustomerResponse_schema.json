@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "xRogType": {
+      "type": "integer"
+    },
+    "customers": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "mlifeNo": {
+              "type": "integer"
+            },
+            "patronType": {
+              "type": "string"
+            },
+            "dateOfEnrollment": {
+              "type": "string"
+            },
+            "modifiable": {
+              "type": "boolean"
+            },
+            "createdAt": {
+              "type": "integer"
+            },
+            "updatedAt": {
+              "type": "integer"
+            },
+            "refreshedAt": {
+              "type": "integer"
+            },
+            "stale": {
+              "type": "boolean"
+            },
+            "externalSyncAt": {
+              "type": "integer"
+            },
+            "tier": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "mlifeNo",
+            "patronType",
+            "dateOfEnrollment",
+            "modifiable",
+            "createdAt",
+            "updatedAt",
+            "refreshedAt",
+            "stale",
+            "externalSyncAt",
+            "tier",
+            "firstName",
+            "lastName",
+            "_xFieldBitmask_"
+          ]
+        }
+      ]
+    },
+    "_xFieldBitmask_": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        }
+      ]
+    }
+  },
+  "required": [
+    "xRogType",
+    "customers",
+    "_xFieldBitmask_"
+  ]
+}

@@ -1,0 +1,6133 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "xRogType": {
+      "type": "integer"
+    },
+    "isMrdPricing": {
+      "type": "boolean"
+    },
+    "header": {
+      "type": "object",
+      "properties": {
+        "sourceId": {
+          "type": "string"
+        },
+        "transactionId": {
+          "type": "string"
+        },
+        "requestId": {
+          "type": "string"
+        },
+        "senderVersion": {
+          "type": "object",
+          "properties": {
+            "majorVersion": {
+              "type": "integer"
+            },
+            "minorVersion": {
+              "type": "integer"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "majorVersion",
+            "minorVersion",
+            "_xFieldBitmask_"
+          ]
+        },
+        "_xFieldBitmask_": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            }
+          ]
+        }
+      },
+      "required": [
+        "sourceId",
+        "transactionId",
+        "requestId",
+        "senderVersion",
+        "_xFieldBitmask_"
+      ]
+    },
+    "prices": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "number"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "integer"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "unavailabilityReason": {
+              "type": "string"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "unavailabilityReason",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "basePrice": {
+              "type": "number"
+            },
+            "customerPrice": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "isComp": {
+              "type": "boolean"
+            },
+            "programIdIsRateTable": {
+              "type": "boolean"
+            },
+            "isCTA": {
+              "type": "boolean"
+            },
+            "points": {
+              "type": "integer"
+            },
+            "basePoints": {
+              "type": "integer"
+            },
+            "memberPrice": {
+              "type": "integer"
+            },
+            "memberBasePrice": {
+              "type": "integer"
+            },
+            "memberPoints": {
+              "type": "integer"
+            },
+            "memberBasePoints": {
+              "type": "integer"
+            },
+            "remainingInventory": {
+              "type": "integer"
+            },
+            "resortFeePrice": {
+              "type": "integer"
+            },
+            "propertyId": {
+              "type": "string"
+            },
+            "roomType": {
+              "type": "string"
+            },
+            "programId": {
+              "type": "string"
+            },
+            "pricingRuleId": {
+              "type": "string"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "basePrice",
+            "customerPrice",
+            "price",
+            "isComp",
+            "programIdIsRateTable",
+            "isCTA",
+            "points",
+            "basePoints",
+            "memberPrice",
+            "memberBasePrice",
+            "memberPoints",
+            "memberBasePoints",
+            "remainingInventory",
+            "resortFeePrice",
+            "propertyId",
+            "roomType",
+            "programId",
+            "pricingRuleId",
+            "_xFieldBitmask_"
+          ]
+        }
+      ]
+    },
+    "commentary": {
+      "type": "string"
+    },
+    "_xFieldBitmask_": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        }
+      ]
+    }
+  },
+  "required": [
+    "xRogType",
+    "isMrdPricing",
+    "header",
+    "prices",
+    "commentary",
+    "_xFieldBitmask_"
+  ]
+}

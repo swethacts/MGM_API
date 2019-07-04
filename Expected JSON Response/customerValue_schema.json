@@ -1,0 +1,1665 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "header": {
+      "type": "object",
+      "properties": {
+        "transactionId": {
+          "type": "string"
+        },
+        "status": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string"
+            },
+            "messages": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "code",
+            "messages"
+          ]
+        }
+      },
+      "required": [
+        "transactionId",
+        "status"
+      ]
+    },
+    "customer": {
+      "type": "object",
+      "properties": {
+        "identity": {
+          "type": "object",
+          "properties": {
+            "corporateCustomerId": {
+              "type": "string"
+            },
+            "mlifeNo": {
+              "type": "string"
+            },
+            "mlifeTier": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "corporateCustomerId",
+            "mlifeNo",
+            "mlifeTier"
+          ]
+        },
+        "customerValues": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "property": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "object",
+                  "properties": {
+                    "customerGrade": {
+                      "type": "object",
+                      "properties": {
+                        "powerValue": {
+                          "type": "string"
+                        },
+                        "powerRank": {
+                          "type": "integer"
+                        },
+                        "segment": {
+                          "type": "integer"
+                        },
+                        "dominantPlay": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "powerValue",
+                        "powerRank",
+                        "segment",
+                        "dominantPlay"
+                      ]
+                    },
+                    "customerOffer": {
+                      "type": "object",
+                      "properties": {
+                        "roomAllowance": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "freePlay": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        },
+                        "resortCredit": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "amount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "roomAllowance",
+                        "freePlay",
+                        "resortCredit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "customerGrade",
+                    "customerOffer"
+                  ]
+                }
+              },
+              "required": [
+                "property",
+                "value"
+              ]
+            }
+          ]
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "createdAt": {
+              "type": "string"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "modifiedAt": {
+              "type": "string"
+            },
+            "modifiedBy": {
+              "type": "string"
+            },
+            "version": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "createdAt",
+            "createdBy",
+            "modifiedAt",
+            "modifiedBy",
+            "version"
+          ]
+        }
+      },
+      "required": [
+        "identity",
+        "customerValues",
+        "metadata"
+      ]
+    }
+  },
+  "required": [
+    "header",
+    "customer"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "xRogType": {
+      "type": "integer"
+    },
+    "header": {
+      "type": "object",
+      "properties": {
+        "sourceId": {
+          "type": "string"
+        },
+        "transactionId": {
+          "type": "string"
+        },
+        "requestId": {
+          "type": "string"
+        },
+        "senderVersion": {
+          "type": "object",
+          "properties": {
+            "majorVersion": {
+              "type": "integer"
+            },
+            "minorVersion": {
+              "type": "integer"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "majorVersion",
+            "minorVersion",
+            "_xFieldBitmask_"
+          ]
+        },
+        "_xFieldBitmask_": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            }
+          ]
+        }
+      },
+      "required": [
+        "sourceId",
+        "transactionId",
+        "requestId",
+        "senderVersion",
+        "_xFieldBitmask_"
+      ]
+    },
+    "itinerary": {
+      "type": "object",
+      "properties": {
+        "customerId": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "integer"
+        },
+        "updatedAt": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "tripParams": {
+          "type": "object",
+          "properties": {
+            "arrivalDate": {
+              "type": "string"
+            },
+            "departureDate": {
+              "type": "string"
+            },
+            "numAdults": {
+              "type": "integer"
+            },
+            "numChildren": {
+              "type": "integer"
+            },
+            "_xFieldBitmask_": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "arrivalDate",
+            "departureDate",
+            "numAdults",
+            "numChildren",
+            "_xFieldBitmask_"
+          ]
+        },
+        "_xFieldBitmask_": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            }
+          ]
+        }
+      },
+      "required": [
+        "customerId",
+        "createdAt",
+        "updatedAt",
+        "id",
+        "tripParams",
+        "_xFieldBitmask_"
+      ]
+    },
+    "_xFieldBitmask_": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        }
+      ]
+    }
+  },
+  "required": [
+    "xRogType",
+    "header",
+    "itinerary",
+    "_xFieldBitmask_"
+  ]
+}
