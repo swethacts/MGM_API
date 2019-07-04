@@ -1,33 +1,28 @@
 pipeline {
-     agent {
-        docker {
-            image 'maven:3-alpine'
-            args '-v $HOME/.m2:/root/.m2'
-        }
+    agent any
+    tools {
+        maven 'Maven 3.3.9'
+        jdk 'jdk8'
     }
     stages {
-
-	
-        stage("build") {
+        stage ('Initialize') {
             steps {
-                sh 'mvn clean install -Dmaven.test.failure.ignore=true'
-		            //sh 'mvn test -P runAllocator site'
-		            // sh 'set MAVEN_OPTS="-Xmx12g"'
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                '''
             }
         }
-		
-		
-				
-    }
 
-    post {
-        always {
-            archive "target/**/*"
-            junit 'target/surefire-reports/*.xml'
-			
-			
+        stage ('Build') {
+            steps {
+                sh 'mvn -Dmaven.test.failure.ignore=true install' 
+            }
+            post {
+                success {
+                    junit 'target/surefire-reports/**/*.xml' 
+                }
+            }
         }
     }
-	
-	
 }
