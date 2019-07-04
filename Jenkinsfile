@@ -15,7 +15,8 @@ pipeline {
        
         sh 'mvn --version'
 
-        sh 'mvn clean com.smartbear.soapui:soapui-maven-plugin:test'
+       // sh 'mvn clean com.smartbear.soapui:soapui-maven-plugin:test'
+       sh 'mvn test -P runAllocator site'
         
       }
 
