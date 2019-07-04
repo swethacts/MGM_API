@@ -11,8 +11,8 @@ pipeline {
         stage("build") {
             steps {
                 sh 'mvn clean install -Dmaven.test.failure.ignore=true'
-		            sh 'mvn test -P runAllocator site'
-		             sh 'set MAVEN_OPTS="-Xmx12g"'
+		            //sh 'mvn test -P runAllocator site'
+		            // sh 'set MAVEN_OPTS="-Xmx12g"'
             }
         }
 		
