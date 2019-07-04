@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sanity]" parallel="methods" data-provider-thread-count="3">
+  <test thread-count="5" name="Test for Mobile(failed)" parallel="methods">
+    <classes>
+      <class name="testscripts.MobileTestingScenario">
+        <methods>
+          <include name="setUpTestRunner"/>
+          <include name="tearDownTestSuite"/>
+          <include name="tiesSelection" invocation-numbers="0"/>
+          <include name="setUpTestSuite"/>
+        </methods>
+      </class> <!-- testscripts.MobileTestingScenario -->
+    </classes>
+  </test> <!-- Test for Mobile(failed) -->
+</suite> <!-- Failed suite [Sanity] -->

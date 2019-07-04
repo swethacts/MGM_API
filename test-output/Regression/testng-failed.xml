@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Regression]" parallel="methods">
+  <test thread-count="1" name="Test for Login Scenario(failed)" parallel="methods">
+    <classes>
+      <class name="testscripts.LoginScenario">
+        <methods>
+          <include name="setUpTestRunner"/>
+          <include name="tearDownTestSuite"/>
+          <include name="testForLoginWithNewlyRegisteredUser" invocation-numbers="0"/>
+          <include name="setUpTestSuite"/>
+          <include name="testForValidLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testscripts.LoginScenario -->
+    </classes>
+  </test> <!-- Test for Login Scenario(failed) -->
+</suite> <!-- Failed suite [Regression] -->
