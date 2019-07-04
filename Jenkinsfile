@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh 'mvn clean install -Dmaven.test.failure.ignore=true'
 		            sh 'mvn test -P runAllocator site'
-		           //sh 'MAVEN_OPTS="-Xmx12g"'
+		             sh 'set MAVEN_OPTS="-Xmx12g"'
             }
         }
 		
