@@ -1,35 +1,51 @@
-pipeline {
- 
-  agent {
-        docker {
-            image 'maven:3-alpine'
-            args '-v $HOME/.m2:/root/.m2'
-        }
-    }
-
-  stages {
-
-    stage('Test') {
-
-      steps{
-       
-        sh 'mvn --version'
-
-       // sh 'mvn clean com.smartbear.soapui:soapui-maven-plugin:test'
-       sh 'mvn test -P runAllocator site'
-        
-      }
-
-    }
-
- stage('Publish HTML report') {
+node {
+	try {
+		notifyBuild('STARTED')
+		stage('Prepare code') {
+		echo 'do checkout stuff'
+	}
+	stage('Testing') {
+		echo 'Testing'
+		echo 'Testing - publish coverage results'
+		bat "cd C:\\MGM\\mgm2 & mvn test -P runAllocator site"
+	}
+	stage('Publish HTML report') {
 	    //PublishHTML Results
 		publishHTML (target: [
 		reportDir: 'C:/mgm2/target/CRAFTReports/HTML Results',
 		reportFiles: 'Summary.html',
 		reportName: "html report"
 		])
+	}
 
-  }
-
+	} catch (e) {
+		// If there was an exception thrown, the build failed
+		currentBuild.result = "FAILED"
+		throw e
+	} finally {
+		// Success or failure, always send notifications
+		notifyBuild(currentBuild.result)
+	}
+}
+def notifyBuild(String buildStatus = 'STARTED') {
+	// build status of null means successful
+	buildStatus =  buildStatus ?: 'SUCCESSFUL'
+	// Default values
+	def colorName = 'RED'
+	def colorCode = '#FF0000'
+	def subject = "${buildStatus}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"
+	def summary = "${subject} (${env.BUILD_URL})"
+	// Override default values based on build status
+	if (buildStatus == 'STARTED') {
+		color = 'YELLOW'
+		colorCode = '#FFFF00'
+	} else if (buildStatus == 'SUCCESSFUL') {
+		color = 'GREEN'
+		colorCode = '#00FF00'
+	} else {
+		color = 'RED'
+		colorCode = '#FF0000'
+	}
+	// Send notifications
+	slackSend (color: colorCode, message: summary)
 }
