@@ -22,17 +22,13 @@ pipeline {
 
     }
 
-    stage('Results') {
-
-      steps{
-  
-        junit '**/target/*.xml'
-
-        archive 'target/*'
-
-      }
-
-    }
+ stage('Publish HTML report') {
+	    //PublishHTML Results
+		publishHTML (target: [
+		reportDir: 'C:/mgm2/target/CRAFTReports/HTML Results',
+		reportFiles: 'Summary.html',
+		reportName: "html report"
+		])
 
   }
 
